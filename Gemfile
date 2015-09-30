@@ -9,6 +9,8 @@ gem 'mini_magick'
 gem 'aasm'
 gem 'awesome_rails_console'
 gem 'letter_opener'
+gem 'activemerchant'
+gem 'active_merchant_allpay', '0.1.2'
 
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
