@@ -6,7 +6,7 @@ CarrierWave.configure do |config|
       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
       region:                'us-west-2'
     }
-    config.fog_directory  = 'xxxx' # 你設定的 bucket name 
+    config.fog_directory  = 'fisher-store'
   else
     config.storage :file
   end
