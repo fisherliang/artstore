@@ -12,6 +12,7 @@ gem 'letter_opener'
 gem 'activemerchant'
 gem 'active_merchant_allpay', '0.1.2'
 gem 'fog'
+gem 'delayed_job_active_record'
 
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
