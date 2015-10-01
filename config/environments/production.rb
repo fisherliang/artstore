@@ -76,6 +76,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.action_mailer.default_url_options = { host: 'fisher-store.heroku.com' } 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    port:           587,
+    address:        "smtp.mailgun.org",
+    user_name:      "postmaster@sandboxd3a2a8bec6e741acb9ef0adea6e3b530.mailgun.org",
+    password:       "477318a9cda185dd7f7b62815b186748", 
+    domain:         "sandboxd3a2a8bec6e741acb9ef0adea6e3b530.mailgun.org",
+    authentication: :plain,
+  }
 
   config.after_initialize do
     ActiveMerchant::Billing::Base.integration_mode = :development
